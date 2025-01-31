@@ -1,25 +1,26 @@
-Include random to randomize the horses movement
-standardize device randomization
-standardize uniform distribution in an integer to distance of 0 and 1
-coin flip distribution standardize
+## a.main()
 
-advance the horses to move on
-print the lanes for each horse
-bool who is the winner 
+Make an array of 5 0 values, call it horsea
+set keepGoing to be true
 
-each of these functions takes an interger for the horse name.
-also taking a pointer representing the horses array
-advance function 'flips a coin' (using randomization) either moves the horse or doesnt 
-Print Lane prints the horses entire lane as dots. but with the horse number in the appropiate position
-A basic for loop
-a is winner function is boolean it returns true if the horse has one the race or hasnt
-  result = false
-  given a horse number and the array of horses
-  if the current horse's value is equal to the TRACK_LENGTH
-  result = true
+While keepGoing:
+  run through each horse in array
+  advance that horse
+  print the lanes for each horse
+    if that horse won
+  set keepGoing to false
+  askm user for input to start next turn
+  
+  ## advance()
 
-The main function 
-advance a single horses value
-print a row for the horse
-ad isWinner function
-make an array of 5 0 values, call it horse set KeepGoing to be true.
+given a horse number and the array of horses
+roll a 0 or 1 value, put it in a coin
+add coin to the horse's position value in the array
+
+##printLane()
+
+given a horse number and the array of horses
+loop from zero to TRACK_LENGTH
+  if the current loop index is equal to the horse's value
+ print the horse's id
+end main
